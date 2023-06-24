@@ -25,7 +25,6 @@ public class Main {
         double mask = 2;
         System.out.println("Значение переменной mask с типом double равно " + mask);
     }
-
     public static void task2() {
         System.out.println("Задача 2");
         int dog = 569;
@@ -34,7 +33,7 @@ public class Main {
         System.out.println(cat);
         short paper = -159;
         System.out.println(paper);
-        long pet = 987678965549l;
+        long pet = 987_678_965_549l;
         System.out.println(pet);
         float colar = 27.12f;
         System.out.println(colar);
@@ -43,7 +42,6 @@ public class Main {
         short whip = 27897;
         System.out.println(whip);
     }
-
     public static void task3() {
         System.out.println("Задача 3");
         byte lP = 23;
@@ -55,7 +53,6 @@ public class Main {
         System.out.println("На каждого ученика рассчитано" + totalPaper + " листов бумаги");
 
     }
-
     public static void task4() {
         System.out.println("Задача 4");
         byte auto = 16;
@@ -63,7 +60,7 @@ public class Main {
         byte timeMin = 20;
         int timeMinTotal = timeMin / time * auto;
         System.out.println("За " + timeMin + " минут машина произвела " + timeMinTotal + " штук бутылок");
-        short timeOneDay = 1440;
+        short timeOneDay = 1_440;
         int timeOneDayTotal = timeOneDay / time * auto;
         System.out.println("За " + timeOneDay + " минут машина произвела " + timeOneDayTotal + " штук бутылок");
         int timeThreeDay = timeOneDay * 3;
@@ -74,7 +71,6 @@ public class Main {
         System.out.println("За " + timeMonth + " минут машина произвела " + timeMonthTotal + " штук бутылок");
 
     }
-
     public static void task5() {
         System.out.println("Задача 5");
         byte pot = 120;
@@ -85,7 +81,6 @@ public class Main {
         int potBrownClass = classAll * potBrown;
         System.out.println("В школе, где " + classAll + " классов, нужно " + potWhiteClass + " банок белой краски и " + potBrownClass + " банок коричневой краски");
     }
-
     public static void task6() {
         System.out.println("Задача 6");
         byte bananaWeight = 80;
@@ -98,14 +93,14 @@ public class Main {
         byte eggWeight = 70;
         int total = bananaWeight * bananaQuantity + milkWeight * milkQuantity + iceСreamQuantity * iceCreamWeight + eggQuantity * eggWeight;
         System.out.println(total);
-        int grPerKg = 1000;
+        int grPerKg = 1_000;
         float totalAll = total / (float) grPerKg;
         System.out.println(totalAll);
     }
 
     public static void task7() {
         System.out.println("Задача 7");
-        int kg = 7 * 1000;
+        int kg = 7 * 1_000;
         int gr = 250;
         int gra = 500;
         int grAll = kg / gr;
@@ -119,24 +114,27 @@ public class Main {
         System.out.println(totalVar);
 
     }
-
     public static void task8() {
         System.out.println("Задача 8");
-        int masha = 67760;
-        int denis = 83690;
-        int kristina = 76230;
-        float ten = 10f;
-        float tenProcent = ten / 100;
-        System.out.println(tenProcent);
-
-        float mashaTen = masha + masha * tenProcent;
+        int masha = 67_760;
+        int denis = 83_690;
+        int kristina = 76_230;
+        float tenProcent = 1.1f;
+        float mashaTen = masha * tenProcent;
+        float mashaYears = masha * 12;
         float mashaDifference = mashaTen - masha;
-        System.out.println("Маша теперь получает " + mashaTen + " рублей. Годовой доход вырос на " + mashaDifference + " рублей");
-        float denisTen = denis + denis * tenProcent;
+        float mashaDifferenceYears = mashaDifference * 12;
+        System.out.println("Маша теперь получает " + mashaTen + " рублей. Годовой доход вырос на " + mashaDifferenceYears + " рублей");
+        float denisTen = denis * tenProcent;
         float denisDifference = denisTen - denis;
-        System.out.println("Динис теперь получает " + denisTen + " рублей. Годовой доход вырос на " + denisDifference + " рублей");
-        float kristinaTen = kristina + kristina * tenProcent;
+        float denisYears = denis * 12;
+        float denisDifferenceYears = denisDifference * 12;
+        System.out.println("Динис теперь получает " + denisTen + " рублей. Годовой доход вырос на " + denisDifferenceYears + " рублей");
+        float kristinaTen = kristina * tenProcent;
         float kristinaDifference = kristinaTen - kristina;
-        System.out.println("Кристина теперь получает " + kristinaTen + " рублей. Годовой доход вырос на " + kristinaDifference + " рублей");
+        float kristinaYears = kristina * 12;
+        float kristinaDifferenceYears = kristinaDifference * 12;
+        System.out.println("Кристина теперь получает " + kristinaTen + " рублей. Годовой доход вырос на " + kristinaDifferenceYears + " рублей");
+
     }
 }
